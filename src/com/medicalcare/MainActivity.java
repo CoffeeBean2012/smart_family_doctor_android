@@ -26,11 +26,11 @@ import com.medicalcare.activity.PersonalActivity;
 import com.residemenu.main.lib.DragLayout;
 public class MainActivity extends Activity implements LocationSource,AMapLocationListener,OnCheckedChangeListener,OnClickListener{
 
-	/** ×ó±ß²à»¬²Ëµ¥ */
+	/** ï¿½ï¿½ß²à»¬ï¿½Ëµï¿½ */
 	private DragLayout mDragLayout;
-	private ImageButton menuSettingBtn;// ²Ëµ¥°´Å¥
-	private LinearLayout menu_header;          //²àÀ­½çÃæÍ·²¼¾Ö
-//	private TextView menu_setting;      //µÍÏÂÉèÖÃ°´Å¥
+	private ImageButton menuSettingBtn;// ï¿½Ëµï¿½ï¿½ï¿½Å¥
+	private LinearLayout menu_header;          //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½
+//	private TextView menu_setting;      //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã°ï¿½Å¥
 	
 	
 	private RelativeLayout rl1;
@@ -38,7 +38,7 @@ public class MainActivity extends Activity implements LocationSource,AMapLocatio
 	private RelativeLayout rl3;
 	private RelativeLayout rl4;
 	
-	/** µØÍ¼ */
+	/** ï¿½ï¿½Í¼ */
 	private AMap aMap;
 	private MapView mapView;
 	private OnLocationChangedListener mListener;
@@ -49,16 +49,16 @@ public class MainActivity extends Activity implements LocationSource,AMapLocatio
 	private Button chooes2;
 	private ViewFlipper flipper; */
 	
-	
+	//adfasdfasd
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		/** µØÍ¼ */
+		/** ï¿½ï¿½Í¼ */
 		mapView = (MapView) findViewById(R.id.map);
-		mapView.onCreate(savedInstanceState);// ´Ë·½·¨±ØÐëÖØÐ´
-		mapInit();  //µ÷ÓÃ·½·¨
+		mapView.onCreate(savedInstanceState);// ï¿½Ë·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´
+		mapInit();  //ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½
 		
 		rl1 = (RelativeLayout)findViewById(R.id.relativeLayout1);
 		rl1.setOnClickListener(this);
@@ -70,7 +70,7 @@ public class MainActivity extends Activity implements LocationSource,AMapLocatio
 		rl4.setOnClickListener(this);
 		
 		
-		/** µ×¶Ë°´Å¥ */
+		/** ï¿½×¶Ë°ï¿½Å¥ */
 		/*chooes1 = (Button)findViewById(R.id.searchBtn);
 		chooes2 = (Button)findViewById(R.id.historyBtn);
 		flipper=(ViewFlipper)findViewById(R.id.flipper);
@@ -94,12 +94,12 @@ public class MainActivity extends Activity implements LocationSource,AMapLocatio
 		menu_header.setOnClickListener(this);
 		
 		/**
-		 * Èç¹ûÐèÒªÔÚ±ðµÄActivity½çÃæÖÐÒ²ÊµÏÖ²à»¬²Ëµ¥Ð§¹û£¬ÐèÒªÔÚ²¼¾ÖÖÐÒýÈëDragLayout£¨Í¬±¾Activity·½Ê½£©£¬
-		 * È»ºóÔÚonCreateÖÐÉùÃ÷Ê¹ÓÃ; Activity½çÃæ²¿·Ö£¬ÐèÒª°ü¹üÔÚMyRelativeLayoutÖÐ.
+		 * ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ú±ï¿½ï¿½Activityï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²Êµï¿½Ö²à»¬ï¿½Ëµï¿½Ð§ï¿½ï¿½ï¿½ï¿½Òªï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½DragLayoutï¿½ï¿½Í¬ï¿½ï¿½Activityï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
+		 * È»ï¿½ï¿½ï¿½ï¿½onCreateï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½; Activityï¿½ï¿½ï¿½æ²¿ï¿½Ö£ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½MyRelativeLayoutï¿½ï¿½.
 		 */
 		mDragLayout = (DragLayout) findViewById(R.id.dl);
 
-		// Ìí¼Ó¼àÌý£¬¿Éµã»÷ºô³ö²Ëµ¥
+		// ï¿½ï¿½Ó¼ï¿½ï¿½ï¿½Éµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½
 		menuSettingBtn = (ImageButton) findViewById(R.id.menu_imgbtn);
 		menuSettingBtn.setOnClickListener(this);
 	}
@@ -112,7 +112,7 @@ public class MainActivity extends Activity implements LocationSource,AMapLocatio
 				mDragLayout.open();
 				break;
 			case R.id.menu_header:
-				Toast.makeText(MainActivity.this, "½øÈë¸öÈËÖÐÐÄ½çÃæ", Toast.LENGTH_LONG).show();
+				Toast.makeText(MainActivity.this, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½", Toast.LENGTH_LONG).show();
 				break;
 			case R.id.relativeLayout1:
 				//Toast.makeText(MainActivity.this, "1", Toast.LENGTH_LONG).show();
@@ -146,34 +146,34 @@ public class MainActivity extends Activity implements LocationSource,AMapLocatio
 		mGPSModeGroup.setOnCheckedChangeListener(this);
 	}
 	private void setUpMap() {
-		aMap.setLocationSource(this);// ÉèÖÃ¶¨Î»¼àÌý
-		aMap.getUiSettings().setMyLocationButtonEnabled(true);// ÉèÖÃÄ¬ÈÏ¶¨Î»°´Å¥ÊÇ·ñÏÔÊ¾
-		aMap.setMyLocationEnabled(true);// ÉèÖÃÎªtrue±íÊ¾ÏÔÊ¾¶¨Î»²ã²¢¿É´¥·¢¶¨Î»£¬false±íÊ¾Òþ²Ø¶¨Î»²ã²¢²»¿É´¥·¢¶¨Î»£¬Ä¬ÈÏÊÇfalse
-		// ÉèÖÃ¶¨Î»µÄÀàÐÍÎª¶¨Î»Ä£Ê½ £¬¿ÉÒÔÓÉ¶¨Î»¡¢¸úËæ»òµØÍ¼¸ù¾ÝÃæÏò·½ÏòÐý×ª¼¸ÖÖ
+		aMap.setLocationSource(this);// ï¿½ï¿½ï¿½Ã¶ï¿½Î»ï¿½ï¿½ï¿½ï¿½
+		aMap.getUiSettings().setMyLocationButtonEnabled(true);// ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½Ï¶ï¿½Î»ï¿½ï¿½Å¥ï¿½Ç·ï¿½ï¿½ï¿½Ê¾
+		aMap.setMyLocationEnabled(true);// ï¿½ï¿½ï¿½ï¿½Îªtrueï¿½ï¿½Ê¾ï¿½ï¿½Ê¾ï¿½ï¿½Î»ï¿½ã²¢ï¿½É´ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½falseï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ø¶ï¿½Î»ï¿½ã²¢ï¿½ï¿½ï¿½É´ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½false
+		// ï¿½ï¿½ï¿½Ã¶ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Î»Ä£Ê½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¶ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
 		aMap.setMyLocationType(AMap.LOCATION_TYPE_LOCATE);
 	}
 	
-	/** Ñ¡Ôñ¶¨Î»µÄ·½Ê½  */
+	/** Ñ¡ï¿½ï¿½Î»ï¿½Ä·ï¿½Ê½  */
 	@Override
 	public void onCheckedChanged(RadioGroup group, int checkedId) {
 		switch (checkedId) {
 		case R.id.gps_locate_button:
-			// ÉèÖÃ¶¨Î»µÄÀàÐÍÎª¶¨Î»Ä£Ê½
+			// ï¿½ï¿½ï¿½Ã¶ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Î»Ä£Ê½
 			aMap.setMyLocationType(AMap.LOCATION_TYPE_LOCATE);
 			break;
 		case R.id.gps_follow_button:
-			// ÉèÖÃ¶¨Î»µÄÀàÐÍÎª ¸úËæÄ£Ê½
+			// ï¿½ï¿½ï¿½Ã¶ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª ï¿½ï¿½ï¿½ï¿½Ä£Ê½
 			aMap.setMyLocationType(AMap.LOCATION_TYPE_MAP_FOLLOW);
 			break;
 		case R.id.gps_rotate_button:
-			// ÉèÖÃ¶¨Î»µÄÀàÐÍÎª¸ù¾ÝµØÍ¼ÃæÏò·½ÏòÐý×ª
+			// ï¿½ï¿½ï¿½Ã¶ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ýµï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ª
 			aMap.setMyLocationType(AMap.LOCATION_TYPE_MAP_ROTATE);
 			break;
 		}
 
 	}
 	/**
-	 * ·½·¨±ØÐëÖØÐ´
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´
 	 */
 	@Override
 	protected void onResume() {
@@ -182,7 +182,7 @@ public class MainActivity extends Activity implements LocationSource,AMapLocatio
 	}
 
 	/**
-	 * ·½·¨±ØÐëÖØÐ´
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´
 	 */
 	@Override
 	protected void onPause() {
@@ -192,7 +192,7 @@ public class MainActivity extends Activity implements LocationSource,AMapLocatio
 	}
 
 	/**
-	 * ·½·¨±ØÐëÖØÐ´
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´
 	 */
 	@Override
 	protected void onSaveInstanceState(Bundle outState) {
@@ -201,7 +201,7 @@ public class MainActivity extends Activity implements LocationSource,AMapLocatio
 	}
 
 	/**
-	 * ·½·¨±ØÐëÖØÐ´
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´
 	 */
 	@Override
 	protected void onDestroy() {
@@ -210,7 +210,7 @@ public class MainActivity extends Activity implements LocationSource,AMapLocatio
 	}
 
 	/**
-	 * ´Ë·½·¨ÒÑ¾­·ÏÆú
+	 * ï¿½Ë·ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
 	@Override
 	public void onLocationChanged(Location location) {
@@ -229,21 +229,21 @@ public class MainActivity extends Activity implements LocationSource,AMapLocatio
 	}
 
 	/**
-	 * ¶¨Î»³É¹¦ºó»Øµ÷º¯Êý
+	 * ï¿½ï¿½Î»ï¿½É¹ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
 	@Override
 	public void onLocationChanged(AMapLocation amapLocation) {
 		if (mListener != null && amapLocation != null) {
 			if (amapLocation != null && amapLocation.getAMapException().getErrorCode() == 0) {
-				mListener.onLocationChanged(amapLocation);// ÏÔÊ¾ÏµÍ³Ð¡À¶µã
-				//»ñÈ¡Î»ÖÃÐÅÏ¢
+				mListener.onLocationChanged(amapLocation);// ï¿½ï¿½Ê¾ÏµÍ³Ð¡ï¿½ï¿½ï¿½ï¿½
+				//ï¿½ï¿½È¡Î»ï¿½ï¿½ï¿½ï¿½Ï¢
 				Double geoLat = amapLocation.getLatitude();
 	            Double geoLng = amapLocation.getLongitude(); 
 	           // System.out.println(geoLat+"  "+geoLng);
 	            Toast.makeText(MainActivity.this,geoLat+"  "+geoLng, Toast.LENGTH_LONG).show();
 			} else {
-				//0±íÊ¾Õý³£¡¢21±íÊ¾IO ²Ù×÷Òì³£¡¢22±íÊ¾Á¬½ÓÒì³£¡¢23±íÊ¾Á¬½Ó³¬Ê±¡¢24±íÊ¾ÎÞÐ§µÄ²ÎÊý¡¢25±íÊ¾¿ÕÖ¸ÕëÒì³£¡¢26±íÊ¾url Òì³£¡¢27±íÊ¾Î´ÖªÖ÷»ú¡¢28±íÊ¾·þÎñÆ÷Á¬½ÓÊ§°Ü¡¢29±íÊ¾Ð­Òé½âÎö´íÎó
-				//30±íÊ¾http Á¬½ÓÊ§°Ü¡¢31±íÊ¾Î´ÖªµÄ´íÎó¡¢32±íÊ¾key ¼øÈ¨Ê§°Ü
+				//0ï¿½ï¿½Ê¾ï¿½ï¿½21ï¿½ï¿½Ê¾IO ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½22ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½23ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ó³ï¿½Ê±ï¿½ï¿½24ï¿½ï¿½Ê¾ï¿½ï¿½Ð§ï¿½Ä²ï¿½ï¿½ï¿½25ï¿½ï¿½Ê¾ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ì³£ï¿½ï¿½26ï¿½ï¿½Ê¾url ï¿½ì³£ï¿½ï¿½27ï¿½ï¿½Ê¾Î´Öªï¿½ï¿½ï¿½ï¿½28ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü¡ï¿½29ï¿½ï¿½Ê¾Ð­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				//30ï¿½ï¿½Ê¾http ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü¡ï¿½31ï¿½ï¿½Ê¾Î´Öªï¿½Ä´ï¿½ï¿½ï¿½32ï¿½ï¿½Ê¾key ï¿½ï¿½È¨Ê§ï¿½ï¿½
 				Log.e("AmapErr","Location ERR:" + amapLocation.getAMapException().getErrorCode());
 				Log.e("AmapErr2","Location ERR2"+ amapLocation.getAMapException().getErrorMessage());
 			}
@@ -251,24 +251,24 @@ public class MainActivity extends Activity implements LocationSource,AMapLocatio
 	}
 
 	/**
-	 * ¼¤»î¶¨Î»
+	 * ï¿½ï¿½ï¿½î¶¨Î»
 	 */
 	@Override
 	public void activate(OnLocationChangedListener listener) {
 		mListener = listener;
 		if (mAMapLocationManager == null) {
 			mAMapLocationManager = LocationManagerProxy.getInstance(this);
-			// ´Ë·½·¨ÎªÃ¿¸ô¹Ì¶¨Ê±¼ä»á·¢ÆðÒ»´Î¶¨Î»ÇëÇó£¬ÎªÁË¼õÉÙµçÁ¿ÏûºÄ»òÍøÂçÁ÷Á¿ÏûºÄ£¬
-			// ×¢ÒâÉèÖÃºÏÊÊµÄ¶¨Î»Ê±¼äµÄ¼ä¸ô£¨×îÐ¡¼ä¸ôÖ§³ÖÎª2000ms£©£¬²¢ÇÒÔÚºÏÊÊÊ±¼äµ÷ÓÃremoveUpdates()·½·¨À´È¡Ïû¶¨Î»ÇëÇó
-			// ÔÚ¶¨Î»½áÊøºó£¬ÔÚºÏÊÊµÄÉúÃüÖÜÆÚµ÷ÓÃdestroy()·½·¨
-			// ÆäÖÐÈç¹û¼ä¸ôÊ±¼äÎª-1£¬Ôò¶¨Î»Ö»¶¨Ò»´Î
-			// ÔÚµ¥´Î¶¨Î»Çé¿öÏÂ£¬¶¨Î»ÎÞÂÛ³É¹¦Óë·ñ£¬¶¼ÎÞÐèµ÷ÓÃremoveUpdates()·½·¨ÒÆ³ýÇëÇó£¬¶¨Î»sdkÄÚ²¿»áÒÆ³ý
-			mAMapLocationManager.requestLocationData(LocationProviderProxy.AMapNetwork, 60000, 10, this);  //6000´ú±í»Øµ÷µÄÊ±¼ä
+			// ï¿½Ë·ï¿½ï¿½ï¿½ÎªÃ¿ï¿½ï¿½ï¿½Ì¶ï¿½Ê±ï¿½ï¿½á·¢ï¿½ï¿½Ò»ï¿½Î¶ï¿½Î»ï¿½ï¿½ï¿½ï¿½Îªï¿½Ë¼ï¿½ï¿½Ùµï¿½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½
+			// ×¢ï¿½ï¿½ï¿½ï¿½ï¿½Ãºï¿½ï¿½ÊµÄ¶ï¿½Î»Ê±ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½Ö§ï¿½ï¿½Îª2000msï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½removeUpdates()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
+			// ï¿½Ú¶ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½destroy()ï¿½ï¿½ï¿½ï¿½
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Îª-1ï¿½ï¿½ï¿½ï¿½Î»Ö»ï¿½ï¿½Ò»ï¿½ï¿½
+			// ï¿½Úµï¿½ï¿½Î¶ï¿½Î»ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½Û³É¹ï¿½ï¿½ï¿½ñ£¬¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½removeUpdates()ï¿½ï¿½ï¿½ï¿½ï¿½Æ³ï¿½ï¿½ï¿½ï¿½ó£¬¶ï¿½Î»sdkï¿½Ú²ï¿½ï¿½ï¿½ï¿½Æ³ï¿½
+			mAMapLocationManager.requestLocationData(LocationProviderProxy.AMapNetwork, 60000, 10, this);  //6000ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½Ê±ï¿½ï¿½
 		}
 	}
 
 	/**
-	 * Í£Ö¹¶¨Î»
+	 * Í£Ö¹ï¿½ï¿½Î»
 	 */
 	@Override
 	public void deactivate() {
