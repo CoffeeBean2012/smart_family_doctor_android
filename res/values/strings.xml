@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MedicalCare</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="et_account_hint">帐号</string>
+    <string name="et_password_hint">密码</string>
+    <string name="login">登录</string>
+    <string name="back">注消用户</string>
+    <string name="register">注册</string>
+    
+    <!-- 定位 -->
+	<string name="gpsfollow">追随</string>
+    <string name="gpslocate">定位</string>
+    <string name="gpsrotate">旋转</string>
+    
+    <string name="phone">电话号码</string>
+    <string name="tv_tips_password">亲，请填写真实电话号码喽</string>
+
+</resources>

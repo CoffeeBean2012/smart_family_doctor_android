@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="devide_line">#CBCED2</color>
+    <color name="blue">#499BF7</color>
+    
+    <color name="grey"> #ebebeb</color>
+    
+    <color name="griditems_bg">#ffe8ecef</color>
+    <color name="commo_text_color">#ff333333</color>
+    <color name="line">#ffd3dde6</color>
+    
+    <!-- 对话框 -->
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="black">#000000</color>
+    <color name="trans">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    
+    <color name="gray_font">#818181</color>
+    
+</resources>

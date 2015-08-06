@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2" >
+     
+
+    <LinearLayout 
+     	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"  
+    	android:orientation="vertical"  >
+    
+    <LinearLayout
+        android:id="@+id/menu_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:paddingBottom="10dp" >
+
+        <ImageView
+            android:id="@+id/menu_user_ico"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:layout_marginLeft="6dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="心语"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="#000000"
+                android:text="蝴蝶为花醉，花却随风飞"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+     
+    <LinearLayout     
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"     
+        android:background="@drawable/persion_background" 
+        android:orientation="vertical" >
+        
+        <LinearLayout     
+    		android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"       
+        	android:background="@drawable/persion_background" 
+        	android:orientation="vertical"   >
+    
+        	<ImageView  
+        		android:layout_width="fill_parent"
+            	android:layout_height="1dip"    
+            	android:background="@drawable/persion_line" />
+          
+        	<RelativeLayout
+        		android:id="@+id/relativeLayout1"
+        		android:layout_width="fill_parent"
+        		android:layout_height="45dip"      
+        		android:clickable="true"
+        		android:background="@drawable/persion_change"  >
+          	
+         		<ImageView
+            		android:id="@+id/add_img_07"
+            		android:layout_width="30.0dip"
+            		android:layout_height="30.0dip"
+            		android:layout_centerVertical="true"
+            		android:layout_marginLeft="10dip"
+            		android:background="@drawable/login_user"
+            		android:scaleType="fitXY" />
+         	
+           		<TextView
+        			android:id="@+id/card_text"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content" 
+        			android:layout_marginLeft="10dip"
+        			android:layout_centerVertical="true"  
+        			android:layout_toRightOf="@id/add_img_07" 
+        			android:text="功能"
+        			android:textSize="16sp"
+        			android:textColor="#202020" />
+          
+          		<ImageView
+                	android:id="@+id/row_img_07"
+            		android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"  
+        			android:layout_marginLeft="220dip"      	     	
+        			android:scaleType="matrix"
+        			android:layout_centerVertical="true"
+        			android:src="@drawable/persion_flag" />
+
+       	   	</RelativeLayout>
+       	   	
+       	   	<ImageView  
+        		android:layout_width="fill_parent"
+            	android:layout_height="1dip"    
+            	android:background="@drawable/persion_line" />
+       	   
+       	   <RelativeLayout
+        		android:id="@+id/relativeLayout2"
+        		android:layout_width="fill_parent"
+        		android:layout_height="45dip"      
+        		android:clickable="true"
+        		android:background="@drawable/persion_change"  >
+          	
+         		<ImageView
+            		android:id="@+id/add_img_07"
+            		android:layout_width="30.0dip"
+            		android:layout_height="30.0dip"
+            		android:layout_centerVertical="true"
+            		android:layout_marginLeft="10dip"
+            		android:background="@drawable/login_user"
+            		android:scaleType="fitXY" />
+         	
+           		<TextView
+        			android:id="@+id/card_text"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content" 
+        			android:layout_marginLeft="10dip"
+        			android:layout_centerVertical="true"  
+        			android:layout_toRightOf="@id/add_img_07" 
+        			android:text="个人信息"
+        			android:textSize="16sp"
+        			android:textColor="#202020" />
+          
+          		<ImageView
+                	android:id="@+id/row_img_07"
+            		android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"  
+        			android:layout_marginLeft="220dip"      	     	
+        			android:scaleType="matrix"
+        			android:layout_centerVertical="true"
+        			android:src="@drawable/persion_flag" />
+
+       	   </RelativeLayout>
+       	   <ImageView  
+        		android:layout_width="fill_parent"
+            	android:layout_height="1dip"    
+            	android:background="@drawable/persion_line" />
+ 	    </LinearLayout> 
+ 	    
+        <RelativeLayout
+        	android:id="@+id/relativeLayout3"
+        	android:layout_width="fill_parent"
+        	android:layout_height="45dip"      
+        	android:clickable="true"
+        	android:background="@drawable/persion_change"  >
+          	
+         	<ImageView
+            	android:id="@+id/add_img_07"
+            	android:layout_width="30.0dip"
+            	android:layout_height="30.0dip"
+            	android:layout_centerVertical="true"
+            	android:layout_marginLeft="10dip"
+            	android:background="@drawable/login_user"
+            	android:scaleType="fitXY" />
+         	
+           	<TextView
+        		android:id="@+id/card_text"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content" 
+        		android:layout_marginLeft="10dip"
+        		android:layout_centerVertical="true"  
+        		android:layout_toRightOf="@id/add_img_07" 
+        		android:text="其他"
+        		android:textSize="16sp"
+        		android:textColor="#202020" />
+          
+          	<ImageView
+                android:id="@+id/row_img_07"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"  
+        		android:layout_marginLeft="220dip"      	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:src="@drawable/persion_flag" />
+
+              
+       	   </RelativeLayout>
+       	   <ImageView  
+        		android:layout_width="fill_parent"
+            	android:layout_height="1dip"    
+            	android:background="@drawable/persion_line" />
+       	   
+       	   <RelativeLayout
+        	android:id="@+id/relativeLayout4"
+        	android:layout_width="fill_parent"
+        	android:layout_height="45dip"      
+        	android:clickable="true"
+        	android:background="@drawable/persion_change"  >
+          	
+         	<ImageView
+            	android:id="@+id/add_img_07"
+            	android:layout_width="30.0dip"
+            	android:layout_height="30.0dip"
+            	android:layout_centerVertical="true"
+            	android:layout_marginLeft="10dip"
+            	android:background="@drawable/login_user"
+            	android:scaleType="fitXY" />
+         	
+           	<TextView
+        		android:id="@+id/card_text"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content" 
+        		android:layout_marginLeft="10dip"
+        		android:layout_centerVertical="true"  
+        		android:layout_toRightOf="@id/add_img_07" 
+        		android:text="其他"
+        		android:textSize="16sp"
+        		android:textColor="#202020" />
+          
+          	<ImageView
+                android:id="@+id/row_img_07"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"  
+        		android:layout_marginLeft="220dip"      	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:src="@drawable/persion_flag" />
+
+              
+       	   </RelativeLayout>
+       	   <ImageView  
+        		android:layout_width="fill_parent"
+            	android:layout_height="1dip"    
+            	android:background="@drawable/persion_line" />
+ 	    </LinearLayout> 
+ 	 </LinearLayout>
+
+</RelativeLayout>

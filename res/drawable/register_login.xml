@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:color="#018e7d"/>
+    <item android:state_focused="true" android:color="#018e7d"/>
+    <item android:color="#17bba7"/> 
+</animation-list>
