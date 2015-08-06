@@ -49,7 +49,7 @@ public class MainActivity extends Activity implements LocationSource,AMapLocatio
 	private Button chooes2;
 	private ViewFlipper flipper; */
 	
-	//adfasdfasd
+	//adfasdfasdfdsfa
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
