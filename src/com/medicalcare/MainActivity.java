@@ -32,7 +32,7 @@ public class MainActivity extends Activity implements LocationSource,AMapLocatio
 	private LinearLayout menu_header;          //��������ͷ����
 //	private TextView menu_setting;      //�������ð�ť
 	
-	
+	//kk
 	private RelativeLayout rl1;
 	private RelativeLayout rl2;
 	private RelativeLayout rl3;
